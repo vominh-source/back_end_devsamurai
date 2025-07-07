@@ -161,27 +161,6 @@ curl -X GET http://localhost:3000/users/me \
 
 ### Backend
 - `npm run start:dev` - Start development server with hot reload
-- `npm run start:prod` - Start production server
-- `npm run build` - Build for production
-- `npm run test` - Run unit tests
-
-### Frontend  
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run test` - Run tests
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
@@ -189,12 +168,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [Prisma](https://prisma.io/) - Database ORM
 - [ShadCN UI](https://ui.shadcn.com/) - UI components
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
-
-## 📧 Contact
-
-Your Name - your.email@example.com
-
-Project Link: [https://github.com/yourusername/devsamurai](https://github.com/yourusername/devsamurai)
 
 ---
 
