@@ -76,6 +76,7 @@ devsamurai/
    ```env
    DATABASE_URL="postgresql://postgres:123@localhost:5434/nest?schema=public"
    JWT_SECRET=super-secret-key-minimum-32-characters-long
+   JWT_REFRESH_SECRET=super-secret-refresh-key-minimum-32-characters-long-different-from-jwt-secret  
    ```
 
 4. **Database setup**
