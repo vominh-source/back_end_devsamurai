@@ -81,7 +81,7 @@ devsamurai/
   
 5. **Run docker container**
    ```bash
-   docker compose up
+   docker compose up -d
    ```
 7. **Database setup**
    ```bash
