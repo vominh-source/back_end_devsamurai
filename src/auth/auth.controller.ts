@@ -1,6 +1,6 @@
-import { Body, Controller, Post, Req } from "@nestjs/common";
+import { Body, Controller, HttpCode, HttpStatus, Post, Req } from "@nestjs/common";
 import { AuthService } from "./auth.service";
-import { AuthDto } from "./dto";
+import { AuthDto, RefreshTokenDto } from "./dto";
 
 @Controller('auth')
 export class AuthController {
@@ -19,4 +19,12 @@ export class AuthController {
         console.log('Token controller:', token);
         return token;
     }
+
+    @Post('refresh')
+    @HttpCode(HttpStatus.OK)
+    async refreshTokens(@Body() dto: RefreshTokenDto) {
+        return this.authService.refreshTokens(dto.refresh_token);
+    }
+
+
 }

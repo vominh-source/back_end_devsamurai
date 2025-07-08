@@ -23,5 +23,9 @@ model User {
   firstName String?
   lastName  String?
 
+  // Add refresh token fields
+  refreshToken       String?
+  refreshTokenExpiry DateTime?
+
   @@map("user")
 }
