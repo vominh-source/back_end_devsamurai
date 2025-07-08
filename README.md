@@ -65,12 +65,12 @@ devsamurai/
 ### Backend Setup
 
 1. **Clone the repository**
-2. **Install dependencies**
+3. **Install dependencies**
    ```bash
    npm install
    ```
 
-3. **Environment setup**
+4. **Environment setup**
    Create `.env` in root folder
    Update `.env` with  credentials:
    ```env
@@ -78,8 +78,12 @@ devsamurai/
    JWT_SECRET=super-secret-key-minimum-32-characters-long
    JWT_REFRESH_SECRET=super-secret-refresh-key-minimum-32-characters-long-different-from-jwt-secret  
    ```
-
-4. **Database setup**
+  
+5. **Run docker container**
+   ```bash
+   docker compose up
+   ```
+7. **Database setup**
    ```bash
    # Generate Prisma client
    npx prisma generate
@@ -88,7 +92,7 @@ devsamurai/
    npx prisma migrate dev
    ```
 
-5. **Start the backend**
+8. **Start the backend**
    ```bash
    npm run start:dev
    ```
